@@ -1,0 +1,51 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>bat-signal — Vempire Uptime Dashboard</title>
+  <meta name="description" content="A dark Vempire-themed uptime/status dashboard for monitoring URLs from the browser." />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div class="bg" aria-hidden="true"></div>
+  <header class="hero glass">
+    <div class="brand">
+      <svg class="bat" viewBox="0 0 100 40" aria-hidden="true"><path d="M50 12 L56 6 L58 14 C68 8 82 8 94 16 C86 18 84 24 86 30 C76 22 66 22 58 28 L54 24 L50 30 L46 24 L42 28 C34 22 24 22 14 30 C16 24 14 18 6 16 C18 8 32 8 42 14 L44 6 Z"/></svg>
+      <div>
+        <h1>bat-signal</h1>
+        <p>Light the signal. Know what’s alive in the dark.</p>
+      </div>
+    </div>
+    <div class="hero-actions">
+      <label class="toggle"><input type="checkbox" id="demo-toggle" /> Demo Mode</label>
+      <button id="check-all" type="button">Check all</button>
+    </div>
+  </header>
+
+  <section class="summary glass" aria-label="Summary">
+    <div><span id="stat-total">0</span><small>Targets</small></div>
+    <div class="up"><span id="stat-up">0</span><small>Up</small></div>
+    <div class="down"><span id="stat-down">0</span><small>Down</small></div>
+    <div><span id="stat-avg">—</span><small>Avg response</small></div>
+  </section>
+
+  <p class="notice glass">
+    Browser CORS limits apply: live checks use <code>fetch(..., { mode: "no-cors" })</code>, so this is a
+    reachability &amp; latency signal — an opaque response counts as reachable — not a full HTTP status check.
+    Use Demo Mode for simulated up/down/latency data with no network calls.
+  </p>
+
+  <form id="add-form" class="glass add-form">
+    <input id="name-input" placeholder="Name — e.g. Vempire HQ" autocomplete="off" />
+    <input id="url-input" placeholder="https://example.com" autocomplete="off" />
+    <button type="submit">Add target</button>
+    <span id="form-msg" role="alert"></span>
+  </form>
+
+  <main id="grid" class="grid"></main>
+
+  <footer>bat-signal · Vempire · Built by Lavish Gangwar (MrVempiree)</footer>
+  <script type="module" src="app.js"></script>
+</body>
+</html>

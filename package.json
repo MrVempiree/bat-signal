@@ -1,0 +1,1 @@
+{"description":"A dark, Vempire-themed uptime/status dashboard for monitoring URLs from the browser.","license":"MIT","name":"bat-signal","scripts":{"test":"node --test"},"type":"module","version":"1.0.0"}
