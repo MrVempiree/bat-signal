@@ -1,0 +1,31 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 400" width="1200" height="400" role="img" aria-label="bat-signal — Vempire uptime dashboard">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#0a0507"/>
+      <stop offset="0.55" stop-color="#050505"/>
+      <stop offset="1" stop-color="#1a0208"/>
+    </linearGradient>
+    <radialGradient id="glow" cx="0.5" cy="0.42" r="0.55">
+      <stop offset="0" stop-color="#e0113a" stop-opacity="0.45"/>
+      <stop offset="1" stop-color="#e0113a" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="crimson" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#ff2a4d"/>
+      <stop offset="1" stop-color="#e0113a"/>
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="400" fill="url(#bg)"/>
+  <rect width="1200" height="400" fill="url(#glow)"/>
+  <circle cx="600" cy="150" r="120" fill="#f5eef0" opacity="0.07"/>
+  <circle cx="600" cy="150" r="92" fill="#f5eef0" opacity="0.06"/>
+  <!-- main bat silhouette -->
+  <path fill="#ff2a4d" d="M600 118 L624 96 L632 128 C672 104 728 100 782 132 C748 140 738 162 746 188 C706 156 666 152 632 176 L616 160 L600 184 L584 160 L568 176 C534 152 494 156 454 188 C462 162 452 140 418 132 C472 100 528 104 568 128 L576 96 Z"/>
+  <!-- small bats -->
+  <path fill="#e0113a" opacity="0.75" d="M170 96 L182 84 L186 100 C204 88 230 88 252 104 C236 108 232 118 236 130 C218 114 200 114 186 126 L178 116 L170 128 L162 116 L154 126 C140 114 122 114 104 130 C108 118 104 108 88 104 C110 88 136 88 154 100 L158 84 Z"/>
+  <path fill="#e0113a" opacity="0.55" d="M1010 78 L1020 68 L1023 82 C1038 72 1060 72 1078 84 C1065 87 1062 96 1065 105 C1050 92 1036 92 1024 102 L1018 94 L1010 104 L1002 94 L996 102 C984 92 970 92 955 105 C958 96 955 87 942 84 C960 72 982 72 997 82 L1000 68 Z"/>
+  <!-- sparkline motif -->
+  <polyline points="120,320 260,300 380,322 500,282 640,306 780,272 920,296 1080,262" fill="none" stroke="url(#crimson)" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" opacity="0.8"/>
+  <text x="600" y="258" text-anchor="middle" font-family="Inter, system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif" font-size="84" font-weight="800" letter-spacing="2" fill="#f5eef0">bat-signal</text>
+  <text x="600" y="298" text-anchor="middle" font-family="Inter, system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif" font-size="24" font-weight="600" letter-spacing="4" fill="#ff8fa3">LIGHT THE SIGNAL · KNOW WHAT'S ALIVE</text>
+  <text x="600" y="356" text-anchor="middle" font-family="Inter, system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif" font-size="17" fill="#b8a7ad">Vempire uptime &amp; status dashboard</text>
+</svg>
